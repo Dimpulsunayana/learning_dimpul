@@ -9,7 +9,7 @@ ls
 echo Dimpul
 myname=dimpul
 surname=Giri
-date=$(date)
+date=$(date +%F)
 echo name = $myname
 echo surname = ${surname}
 echo Hey,Todays date is $date
