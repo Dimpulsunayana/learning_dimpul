@@ -9,6 +9,7 @@ ls
 echo Dimpul
 myname=dimpul
 echo name = $myname
+echo "----dimmi---"
 
 # grep root user from user file
 #grep root /etc/passwd
