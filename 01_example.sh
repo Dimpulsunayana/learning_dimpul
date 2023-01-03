@@ -10,10 +10,12 @@ echo Dimpul
 myname=dimpul
 surname=Giri
 date=$(date +%F)
+b=200
 echo name = $myname
 echo surname = ${surname}
 echo Hey,Todays date is $date
 echo "----dimmi---"
+echo b - $b
 
 # Color COde Syntax : echo -e "\e[COLmMESSAGE\e[0m"
 
