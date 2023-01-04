@@ -15,7 +15,7 @@ echo name = $myname
 echo surname = ${surname}
 echo Hey,Todays date is $date
 echo "----dimmi---"
-echo b - $b
+echo a - $a
 
 # Color COde Syntax : echo -e "\e[COLmMESSAGE\e[0m"
 
