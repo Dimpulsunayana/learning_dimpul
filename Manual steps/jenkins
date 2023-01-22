@@ -1,0 +1,25 @@
+https://www.jenkins.io/download/
+
+select centos and run the commands in server where to install jenkins
+
+ sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+ yum install fontconfig java-11-openjdk
+ yum install jenkins
+
+ also run below commands
+
+ systemctl enable jenkins
+ systemctl start jenkins
+
+ run below commands to verify
+
+ This is to verify the jenkins java installation package
+ ps-ef | grep java
+
+ This is to verify the weather 8080 port is enabled or not
+ netstat -lntp
+
+ Finally check <public_ip_address_of_the_server>:8080 in chrome
+
+
