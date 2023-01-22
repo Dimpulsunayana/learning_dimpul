@@ -22,4 +22,9 @@ select centos and run the commands in server where to install jenkins
 
  Finally check <public_ip_address_of_the_server>:8080 in chrome
 
+ In Jenkins server,go to the path(for ref - cat /var/lib/jenkins/secrets/initialAdminPassword) which will give
+ in above command,Take the password and proceed to next step
+ Create a 1st user as per ur choice
+ U have just created the jenkins Dashboard
+
 

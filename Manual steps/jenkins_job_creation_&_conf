@@ -1,0 +1,23 @@
+1. In jenkins Dashboard,Click create new item to create a job.
+2. Enter the name what u want and select freestyle for sample(testing purpose)
+
+Configuration steps to AWS-Jenkins
+
+1. in Source Code Management,select Git as ur code is on Git repo
+  a. update git "Repository URL" and branch name
+  Note: By default jenkins will come with master branch,so change it accordingly.
+
+2. In Build Steps,Select execute shell as u r gng to run the ansible or shell scripts
+   a.update cloud credentials
+    ref - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
+    ex - export AWS_ACCESS_KEY_ID=AKIAVMOQ5GOOYBCYDCZL
+         export AWS_SECRET_ACCESS_KEY=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
+         export AWS_DEFAULT_REGION=us-east-1
+   b. Give command what u r trying to run
+    ex - ansible-playbook -i localhost, 01vars.yml -e ROLL_NAME=frontend -e HOST_NAME=all
+
+Installation steps in jenkins server
+
+1. install ansible
+ a. yum install python39-devel -y
+    pip3.9 install ansible botocore boto3
