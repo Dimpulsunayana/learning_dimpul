@@ -1,0 +1,25 @@
+All below steps is for our jenkins agent will not support,its anot about developers java version
+
+for shipping component..language is java(In java developer will select the wrapper either gradle or maven)
+in workstation server,run the cmd "java --version" to chek the java version..as it is already java11 version,
+when we run "yum install mnv" it will try to install java 1.8 so it is not the crct process.
+
+***maven manual installation****
+go to "https://maven.apache.org/download.cgi" web
+copy any file in Link -- "apache-maven-3.9.0-bin.zip(copy link address from here)"
+
+in workstation server,run "cd /opt/"
+then install maven using "curl -L -O https://dlcdn.apache.org/maven/maven-3/3.9.0/binaries/apache-maven-3.9.0-bin.zip"
+ls
+sudo unzip apache-maven-3.9.0-bin.zip
+ls
+cd apache-maven-3.9.0
+ls
+cd /bin
+ls
+./mvn --version
+pwd(here it will be "/opt/apache-maven-3.9.0/bin" )
+still will not be able to run mvn command.so to create mvn command using below
+sudo ln -s /opt/apache-maven-3.9.0/bin/mvn /bin/mvn (this is to create shortcut/softlink)
+mvn --version(just to verify)
+
