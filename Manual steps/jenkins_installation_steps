@@ -15,7 +15,7 @@ select centos and run the commands in server where to install jenkins
  run below commands to verify
 
  This is to verify the jenkins java installation package
- ps-ef | grep java
+ ps -ef | grep java
 
  This is to verify the weather 8080 port is enabled or not
  netstat -lntp
